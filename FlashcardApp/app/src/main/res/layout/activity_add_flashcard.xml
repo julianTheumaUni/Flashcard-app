@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:padding="15dp"
+    >
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_view_add_flashcard_deck_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Category"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20sp"-->
+<!--        />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linear_layout_add_flashcard_category_view"-->
+<!--        android:layout_below="@id/text_view_add_flashcard_deck_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/ic_launcher_background"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Mobile Computing"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/text_view_add_flashcard_front_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Front Text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_add_flashcard_front_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/text_view_add_flashcard_front_text"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_add_flashcard_back_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_add_flashcard_front_text"
+        android:text="Back Text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_add_flashcard_back_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/text_view_add_flashcard_back_text"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/button_add_flashcard_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_add_flashcard_back_text"
+        android:text="Save"
+        android:backgroundTint="@color/dark_blue"
+        android:layout_alignEnd="@id/edit_text_add_flashcard_back_text"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

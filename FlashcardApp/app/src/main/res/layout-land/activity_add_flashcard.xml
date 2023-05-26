@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_gray"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/text_view_add_flashcard_front_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Front Text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_text_add_flashcard_front_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/text_view_add_flashcard_front_text"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/text_view_add_flashcard_back_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text_add_flashcard_front_text"
+            android:layout_marginTop="10dp"
+            android:text="Back Text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_text_add_flashcard_back_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/text_view_add_flashcard_back_text"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/button_add_flashcard_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text_add_flashcard_back_text"
+            android:layout_alignEnd="@id/edit_text_add_flashcard_back_text"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Save" />
+
+    </RelativeLayout>
+</ScrollView>

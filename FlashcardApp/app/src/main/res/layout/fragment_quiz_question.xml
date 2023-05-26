@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_layout_quiz_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:minWidth="250dp">
+
+
+        <TextView
+            android:id="@+id/text_view_quiz_question_flashcard_front_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the value of x in the equation 2x + 3 = 11?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_quiz_question_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="Answer"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/button_submit_quiz_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Submit"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_spinner_quiz_question"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/loadinganim"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
